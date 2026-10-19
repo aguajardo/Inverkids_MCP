@@ -1,6 +1,8 @@
 from src.controllers.feedback_controller import (
     get_feedback_list,
     get_feedback_detail,
+    get_feedback_v2_list,
+    get_feedback_v2_detail,
 )
 from src.infrastructure.decorators import with_backend_client, with_error_handling
 from src.infrastructure.http.backend_client import BackendClient
@@ -33,6 +35,40 @@ def get_feedback_detail_handler(
     feedback_id: str,
 ):
     return get_feedback_detail(
+        backend_client=backend_client,
+        feedback_id=feedback_id,
+    )
+
+
+@with_error_handling
+@with_backend_client
+def get_feedback_v2_list_handler(
+    *,
+    backend_client: BackendClient,
+    user_id: str | None = None,
+    module_id: str | None = None,
+    topic_id: str | None = None,
+    limit: int = 20,
+    offset: int = 0,
+):
+    return get_feedback_v2_list(
+        backend_client=backend_client,
+        user_id=user_id,
+        module_id=module_id,
+        topic_id=topic_id,
+        limit=limit,
+        offset=offset,
+    )
+
+
+@with_error_handling
+@with_backend_client
+def get_feedback_v2_detail_handler(
+    *,
+    backend_client: BackendClient,
+    feedback_id: str,
+):
+    return get_feedback_v2_detail(
         backend_client=backend_client,
         feedback_id=feedback_id,
     )

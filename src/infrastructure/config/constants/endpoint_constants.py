@@ -73,6 +73,8 @@ MCP_GRADE_DETAIL = f"{BASE}/mcp/get_grade_detail"
 # Feedback
 MCP_FEEDBACK_LIST = f"{BASE}/mcp/get_feedback_list"
 MCP_FEEDBACK_DETAIL = f"{BASE}/mcp/get_feedback_detail"
+MCP_FEEDBACK_V2_LIST = f"{BASE}/mcp/get_feedback_v2_list"
+MCP_FEEDBACK_V2_DETAIL = f"{BASE}/mcp/get_feedback_v2_detail"
 
 
 # Users
