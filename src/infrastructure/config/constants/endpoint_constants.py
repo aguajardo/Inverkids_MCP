@@ -70,6 +70,18 @@ MCP_GRADES_SUMMARY = f"{BASE}/mcp/get_grades_summary"
 MCP_GRADE_DETAIL = f"{BASE}/mcp/get_grade_detail"
 
 
+STATISTICS_MY_SCHOOLS = f"{BASE}/statistics/get_my_statistics_schools"
+STATISTICS_MY_GROUPS_SUMMARY = f"{BASE}/statistics/get_my_groups_summary"
+STATISTICS_MY_STUDENTS_SUMMARY = f"{BASE}/statistics/get_my_students_summary"
+STATISTICS_MY_TOPICS_SUMMARY = f"{BASE}/statistics/get_my_topics_summary"
+STATISTICS_LEVEL_STATS = f"{BASE}/statistics/get_level_stats"
+
+
+MCP_HISTORICAL_BATCHES = f"{BASE}/mcp/get_historical_batches"
+MCP_HISTORICAL_RECORDS = f"{BASE}/mcp/get_historical_records"
+MCP_HISTORICAL_GRADES_SUMMARY = f"{BASE}/mcp/get_historical_grades_summary"
+
+
 # Feedback
 MCP_FEEDBACK_LIST = f"{BASE}/mcp/get_feedback_list"
 MCP_FEEDBACK_DETAIL = f"{BASE}/mcp/get_feedback_detail"

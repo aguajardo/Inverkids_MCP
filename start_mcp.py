@@ -17,8 +17,10 @@ import src.mcp.tools.modules
 import src.mcp.tools.feedback
 import src.mcp.tools.grades
 import src.mcp.tools.groups
+import src.mcp.tools.historical
 import src.mcp.tools.schools
 import src.mcp.tools.skills
+import src.mcp.tools.statistics
 import src.mcp.tools.texts
 import src.mcp.tools.topics
 import src.mcp.tools.users

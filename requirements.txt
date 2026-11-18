@@ -5,3 +5,4 @@ pytest
 fastmcp
 uv
 fastapi
+mcp<2
